@@ -1,0 +1,16 @@
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: apples;
+}
+
+li:before {
+  content: counter(apples);
+  counter-increment: apples;
+  font-family: sans-serif;
+  color: pink;
+  font-weight: bold;
+  font-size: 38px;
+  margin-right: 10px;
+}
